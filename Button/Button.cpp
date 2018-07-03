@@ -8,5 +8,14 @@
  */
 
 Button::Button(int pin) {
+    // Store pin as a local variable
+    _pin = pin;
+
     // Lets set up the pins
+    pinMode(_pin, INPUT);
+}
+
+bool Button::isPressed() {
+    // Check if the pin is high
+    return digitalRead(_pin) == HIGH;
 }
