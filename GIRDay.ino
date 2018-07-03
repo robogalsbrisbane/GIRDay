@@ -3,11 +3,10 @@
 // Create a button on pin 7
 Button button(7);
 
-int ledPin = 13;
+LED led(2);
 
 void setup() {
-    // put your setup code here, to run once
-    pinMode(ledPin, OUTPUT);
+    led.setup();
 }
 
 void loop() {
@@ -15,8 +14,8 @@ void loop() {
 
     // Check if the button is pressed
     if (button.isPressed()) {
-        digitalWrite(ledPin, HIGH);
+        led.turnOn();
     } else {
-        digitalWrite(ledPin, LOW);
+        led.turnOff();
     }
 }
