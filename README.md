@@ -7,3 +7,9 @@ There are some folders for components, but feel free to make your own
 ## Running
 
 Open `GIRDay.ino` with the Arduino IDE
+
+## Adding more libraries
+
+1. Create the folder
+2. Create a `.cpp` (source file) and `.h` (header file) within the folder
+3. Add both the source and header file within `Lib.h`
