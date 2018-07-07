@@ -1,31 +1,45 @@
 #include "Lib.h"
 
-// Create a button on pin 7
-//Button button(7);
-//
-//LED led(2);
+/**
+ * Define the modules here, specify the pins
+ */
+
+// Connect a button on pin 7
+Button button(7);
+// Connect a led on pin 13
+LED led(13);
+// Connect the piezo on pin 6
+Piezo piezo(6);
+// Connect the seg display on pins 11, 12, 8
 SegDisplay segDisplay(11, 12, 8);
 
 void setup() {
-//    led.setup();
-  //set pins to output so you can control the shift register
-  segDisplay.setup();
+    // Setup the modules
+    led.setup();
+    button.setup();
+    piezo.setup();
+    segDisplay.setup();
+
+    piezo.playPiratesOfTheCarribean();
 }
 
 void loop() {
     // put your main code here, to run repeatedly
 
     // Check if the button is pressed
-//    if (button.isPressed()) {
-//        led.turnOn();
-//    } else {
-//        led.turnOff();
-//    }
-    for(int i = 0; i < 10; i++) {
-      segDisplay.writeNumber(i);
-      delay(500);
-      segDisplay.turnOff();
-      delay(500);
+    if (button.isPressed()) {
+        led.turnOn();
+        piezo.play(NOTE_C8, 500);
+
+        for(int i = 0; i < 10; i++) {
+            segDisplay.writeNumber(i);
+            delay(100);
+        }
+
+        segDisplay.turnOff();
+        led.turnOff();
+    } else {
+        led.turnOff();
     }
 
 }

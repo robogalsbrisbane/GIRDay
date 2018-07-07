@@ -15,6 +15,7 @@ class LED {
          * Creates an LED
          *
          * Specify the number of the pin to use
+         * It will work with any of the digital pins (2 to 13)
          */
         LED(int pin);
 

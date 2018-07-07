@@ -19,6 +19,13 @@ class Button {
         Button(int pin);
 
         /**
+         * Sets up the button
+         *
+         * Run within your setup function
+         */
+        void setup();
+
+        /**
          * Returns `true` if the button is pressed
          * otherwise `false`
          */

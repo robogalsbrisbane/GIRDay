@@ -10,7 +10,9 @@
 Button::Button(int pin) {
     // Store pin as a local variable
     _pin = pin;
+}
 
+void Button::setup() {
     // Lets set up the pins
     pinMode(_pin, INPUT);
 }

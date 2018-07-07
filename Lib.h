@@ -18,3 +18,8 @@
 // 7 Segment Display
 #include "SegDisplay/segDisplay.h"
 #include "SegDisplay/segDisplay.cpp"
+
+// Piezo
+#include "Piezo/Piezo.h"
+#include "Piezo/Piezo.cpp"
+#include "Piezo/Pitches.h"
