@@ -14,3 +14,8 @@
 // LED
 #include "LED/LED.h"
 #include "LED/LED.cpp"
+
+// Piezo
+#include "Piezo/Piezo.h"
+#include "Piezo/Piezo.cpp"
+#include "Piezo/Pitches.h"
