@@ -4,7 +4,7 @@
 /**
  * This stores the implementation of the libary
  *
- * If your looking at how to use it, check out LED.h instead
+ * If you're looking at how to use it, check out LED.h instead
  */
 LED::LED(int pin) {
     // Store pin as a local variable

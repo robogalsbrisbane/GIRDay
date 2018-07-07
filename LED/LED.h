@@ -39,7 +39,7 @@ class LED {
      * These are used within the library
      *
      * Reading further isn't required,
-     * unless your interested
+     * unless you're interested
      */
     private:
         int _pin;

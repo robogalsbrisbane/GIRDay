@@ -14,3 +14,7 @@
 // LED
 #include "LED/LED.h"
 #include "LED/LED.cpp"
+
+// 7 Segment Display
+#include "SegDisplay/segDisplay.h"
+#include "SegDisplay/segDisplay.cpp"
