@@ -1,4 +1,4 @@
-#include "Lib.h"
+#include "RGBris_Arduino_Lib.h"
 
 /**
  * Define the modules here, specify the pins

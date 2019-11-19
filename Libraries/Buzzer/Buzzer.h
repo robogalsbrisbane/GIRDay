@@ -1,27 +1,27 @@
 /**
- * A library for making sounds with a Piezo buzzer
+ * A library for making sounds with a Buzzer buzzer
  *
  * @author Roy Portas
  */
-#ifndef Piezo_h
-#define Piezo_h
+#ifndef Buzzer_h
+#define Buzzer_h
 
 #include "Pitches.h"
 #include "Arduino.h"
 
-class Piezo {
+class Buzzer {
     public:
 
         /**
-         * Creates a Piezo
+         * Creates a Buzzer
          *
          * Specify the number of the pin to use
          * Note: The pin must have a '~' next to it on the Arduino
          */
-        Piezo(int pin);
+        Buzzer(int pin);
 
         /**
-         * Sets up the piezo buzzer
+         * Sets up the Piezo buzzer
          *
          * Run within your setup function
          */

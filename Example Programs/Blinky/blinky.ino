@@ -1,4 +1,4 @@
-#include <Lib.h>
+#include <RGBris_Arduino_Lib.h>
 
 LED led1(8);
 LED led2(9);
@@ -22,11 +22,11 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  randomLed = random(0, 3); 
+  randomLed = random(0, 3);
   randomDuration = random(0, 2000);
-  
+
   Serial.println(randomLed);
-  Serial.println(randomDuration); 
+  Serial.println(randomDuration);
 
   leds[randomLed].turnOn();
   delay(randomDuration);
