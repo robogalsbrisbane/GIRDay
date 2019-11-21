@@ -36,6 +36,11 @@ class LED {
          */
         void turnOff();
 
+        /**
+  		 * Sets the brightness of the LED
+  		 */
+  		void setBrightness(float value);
+
     /**
      * These are used within the library
      *

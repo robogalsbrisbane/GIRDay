@@ -7,27 +7,37 @@
 // Connect a button on pin 7
 Button button(7);
 // Connect a led on pin 13
-LED led(13);
+LED whitLED(13);
+LED bluLED(12);
 // Connect the piezo on pin 6
-Piezo piezo(6);
+Buzzer buzzer(6);
 // Connect the seg display on pins 11, 12, 8
 SegDisplay segDisplay(11, 12, 8);
 
 void setup() {
     // Setup the modules
-    led.setup();
+    whiteLED.setup();
+    blueLED.setup();
     button.setup();
-    piezo.setup();
+    buzzer.setup();
     segDisplay.setup();
 
-    piezo.playPiratesOfTheCarribean();
+    buzzer.playPiratesOfTheCarribean();
 }
 
 void loop() {
     // put your main code here, to run repeatedly
 
     // Check if the button is pressed
-    if (button.isPressed()) {
+
+    whiteLED.turnOn();
+    blueLED.turnOff();
+    delay(1000);
+    whiteLED.turnOff();
+    blueLED.turnOn();
+    delay(1000);
+    
+    /**if (button.isPressed()) {
         led.turnOn();
         piezo.play(NOTE_C8, 500);
 
@@ -40,6 +50,6 @@ void loop() {
         led.turnOff();
     } else {
         led.turnOff();
-    }
+    } **/
 
 }

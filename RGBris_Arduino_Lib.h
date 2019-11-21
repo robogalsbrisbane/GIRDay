@@ -11,13 +11,21 @@
 #include "Libraries/Button/Button.h"
 #include "Libraries/Button/Button.cpp"
 
-// LED
+// LEDs
 #include "Libraries/LED/LED.h"
 #include "Libraries/LED/LED.cpp"
 
+// Potentiometer
+#include "Libraries/Potentiometer/pot.h"
+#include "Libraries/Potentiometer/pot.cpp"
+
+// Ultrasonic
+#include "Libraries/Ultrasonic/Ultrasonic.h"
+#include "Libraries/Ultrasonic/Ultrasonic.cpp"
+
 // 7 Segment Display
-#include "Libraries/SegDisplay/segDisplay.h"
-#include "Libraries/SegDisplay/segDisplay.cpp"
+#include "Libraries/SegDisplay/SegDisplay.h"
+#include "Libraries/SegDisplay/SegDisplay.cpp"
 
 // Piezo Buzzer
 #include "Libraries/Buzzer/Buzzer.h"
