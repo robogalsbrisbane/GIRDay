@@ -1,22 +1,23 @@
-# GIRDay
-Girls In robotics software
+# Robogals Brisbane Arduino Library
+Arduino libraries developed for use by Robogals Brisbane.
 
-This is the repo where were putting software for the GIR Day
-There are some folders for components, but feel free to make your own
+There are two main folders: Libraries, which contains the library source code, and Example Programs, which contains some examples. 
+Feel free to make sub-folders within these folders. 
 
 ## Running
 
-Open `GIRDay.ino` with the Arduino IDE
+Open `RGBris-Arduino.ino` with the Arduino IDE
 
 ## Libraries
 
-- [x] LEDs
-- [x] Buttons
+- [ ] LEDs
+- [ ] Buttons
+- [ ] Piezo Buzzer
+- [ ] Ultrasonic Sensor
 - [ ] 7 Seg display
-- [ ] Piezo
 
 ## Adding more libraries
 
-1. Create the folder
+1. Create the folder (preferable within Libraries)
 2. Create a `.cpp` (source file) and `.h` (header file) within the folder
-3. Add both the source and header file within `Lib.h`
+3. Add both the source and header file within `RGBris-Arduino-Lib.h`
