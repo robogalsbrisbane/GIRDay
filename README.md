@@ -11,9 +11,11 @@ Open `RGBris-Arduino-master.ino` with the Arduino IDE
 
 ## Libraries
 
-- [ ] LEDs
-- [ ] Buttons
-- [ ] Piezo Buzzer
+- [x] LEDs
+- [x] Buttons
+- [x] Piezo Buzzer
+- [ ] Potentiometer
+- [ ] Servo
 - [ ] Ultrasonic Sensor
 - [ ] 7 Seg display
 
