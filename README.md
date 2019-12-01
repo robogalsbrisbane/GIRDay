@@ -6,7 +6,8 @@ Feel free to make sub-folders within these folders.
 
 ## Running
 
-Open `RGBris-Arduino.ino` with the Arduino IDE
+Download the zip file of the library and extract it.
+Open `RGBris-Arduino-master.ino` with the Arduino IDE
 
 ## Libraries
 
